@@ -1,11 +1,40 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap');
+
 :root {
+
+  /* colors variables */
   --primary-color: #8ECAE6   ;
   --secondary-color: #023047 ;
   --accent1-color: #FB8500;
   --accent1-color-light: #fb8600b9;
   --accent2-color: #ffffff;
   --accent3-color: #f0f0f0;
+
+  /* headline and paragraphs fonts variables */
+  --heading-font: "Permanent Marker", Verdana, Tahoma,  sans-serif;
+  --paragraph-font: "Roboto", Georgia, serif;
+
+}
+
+body {
+  background-color: var(--accent3-color);
+  font-family: var(--paragraph-font);
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+
+h2 {
+  margin: 0;
 }
 
 #content {
@@ -13,10 +42,24 @@
   margin: 0 auto;
 }
 
+#logo_link {
+  padding-top: 5px;
+}
+
 nav a {
-  text-align: right;
+  text-align: center;
   color: var(--secondary-color);
   text-decoration: none;
+  padding: 35px;
+}
+
+nav a:hover {
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
+}
+
+#hero-img {
+  width: 100%;
 }
 
 #hero-msg h1,
@@ -32,17 +75,13 @@ main section {
   text-align: center;
 }
 
+main section img {
+  box-sizing: border-box;
+}
+
 #background {
   height: 725px;
   background-color: var(--secondary-color);
-}
-
-body {
-  background-color: var(--accent3-color);
-}
-
-header {
-  background-color: var(--primary-color);
 }
 
 .logo,
@@ -50,27 +89,30 @@ header {
   width: 80px;
 } 
 
-nav a:hover {
-  background-color: var(--secondary-color);
-  color: var(--accent2-color);
+.icon {
+  padding-top: 10px;
 }
 
-#hero-img {
-  width: 100%;
+.home-title {
+  font-size: 2em;
+  margin-top: 10px;
 }
 
-/* .home-title {
-  background-color: var(--secondary-color);
-  color: var(--accent2-color);
-} */
+.rivers-card, 
+.camping-card, 
+.rapids-card {
+  margin: 200px 0;
+}
 
 .book,
 .join {
-  padding: 10px 20px;
-  border-radius: 5px;
+  font-size: 18px;
   background-color: var(--accent1-color);
   color: var(--accent2-color);
   text-decoration: none;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 
 .book:hover,
@@ -79,8 +121,14 @@ nav a:hover {
   transition: all .15s ease;
 } 
 
+.card-img {
+  border: 10px solid var(--secondary-color);
+}
+
 .msg {
   background-color: var(--secondary-color);
+  line-height: 1.5em;
+  padding: 35px;
 }
 
 .msg h2,
@@ -88,12 +136,22 @@ nav a:hover {
   color: var(--accent2-color);
 }
 
+.msg p {
+  font-size: .8em;
+  padding-bottom: 15px;
+}
+
 footer {
   background-color: var(--primary-color);
   color: var(--accent2-color);
+  margin-top: 50px;
 }
 
 /* There is no "h3 tag" in the footer to style */
+
+footer {
+  padding: 25px 50px;
+}
 
 footer p {
   color: var(--secondary-color);
@@ -103,6 +161,10 @@ footer p {
 footer a {
   color: var(--secondary-color);
   text-decoration: none;
+}
+
+footer .social img {
+  padding-top: 15px;
 }
 
 footer p a:hover {
