@@ -5,8 +5,8 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #BC6C25   ;
-  --secondary-color: #DDA15E ;
+  --primary-color: #934107;
+  --secondary-color: #0E6120;
   --accent1-color: #FEFAE0;
   --accent2-color: #FFFFFF;
   --accent3-color: #000000;
@@ -16,17 +16,16 @@ Fonts are separated by a | */
   --paragraph-font: 'Noticia Text', serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #BC6C25;  /* headlines on a white background */ 
+  --headline-color-on-white: var(--primary-color);  /* headlines on a white background */ 
   --headline-color-on-color: var(--accent2-color); /* headlines on a colored background */ 
-  --paragraph-color-on-white: #BC6C25; /* paragraph text on a white background */ 
+  --paragraph-color-on-white: var(--primary-color); /* paragraph text on a white background */ 
   --paragraph-color-on-color: var(--accent2-color); /* paragraph text on a colored background */ 
-  --paragraph-background-color: #BC6C25  ;
-  --nav-link-color: #BC6C25;
-  --nav-background-color: #FEFAE0;
+  --paragraph-background-color: var(--primary-color)  ;
+  --nav-link-color: var(--primary-color);
+  --nav-background-color: var(--accent1-color);
   --nav-hover-link-color: var(--accent2-color);
-  --nav-hover-background-color: #BC6C25;
+  --nav-hover-background-color: var(--primary-color);
 }
-
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
@@ -56,8 +55,8 @@ hr {
 header {
   padding: 1em;
   text-align: center;
-  color: var(--paragraph-color-on-color);
-  background-color: var(--paragraph-background-color);
+  color: var(--headline-color-on-color);
+  background-color: var(--headline-color-on-white);
 }
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
@@ -80,6 +79,10 @@ p {
 .colors td{
   width: 25%;
   height: 3em;
+}
+
+.primary, .secondary {
+  color: white;
 }
 
 .primary {
