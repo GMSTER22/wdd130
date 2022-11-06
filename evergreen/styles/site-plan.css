@@ -40,7 +40,6 @@ body {
 img {
   display: block;
   margin: 0 auto;
-  /* To be deleted later */
   max-width: 50%;
   max-height: 250px;
 }
