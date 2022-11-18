@@ -216,15 +216,33 @@ nav a:hover {
 
   display: grid;
 
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(6, auto);
 
-  row-gap: 80px;
+  row-gap: 100px;
 
 }
 
 .copy {
 
   grid-row: 2/3;
+
+}
+
+.copy-content {
+
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  padding: 20px;
+
+  text-align: center;
+
+  background-color: var( --paragraph-background-color );
+
+  color: var( --paragraph-color-on-color );
+
+  border-radius: 10px;
 
 }
 
@@ -256,9 +274,9 @@ nav a:hover {
 
 .packages-title {
 
-  max-width: 500px;
+  max-width: 400px;
 
-  margin: 0 auto 50px;
+  margin: 0 auto 30px;
 
 }
 
@@ -267,6 +285,12 @@ nav a:hover {
   display: flex;
 
   column-gap: 50px;
+
+}
+
+.packages-group img {
+
+  border-radius: 10px;
 
 }
 
@@ -290,5 +314,111 @@ nav a:hover {
 .locations {
 
   grid-row: 5/6;
+
+  padding: 30px;
+
+  border: 5px solid var(--primary-color);
+
+  border-radius: 10px;
+
+}
+
+.locations-title {
+
+  max-width: 340px;
+
+  margin: 0 auto 30px;
+
+  text-align: center;
+
+}
+
+.locations-text {
+
+  max-width: 550px;
+
+  margin: 0 auto 50px;
+
+  text-align: center;
+
+}
+
+.locations-list {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+
+}
+
+.locations-item {
+
+  width: 30%;
+
+  text-align: center;
+
+}
+
+.locations-list i {
+
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 100px;
+
+  color: var(--primary-color);
+
+}
+
+.locations-item span {
+
+  display: block;
+
+  margin-bottom: 15px;
+
+  font-weight: 800;
+
+  font-size: 22px;
+
+  color: var( --primary-color );
+
+}
+
+.locations-cta {
+
+  text-align: center;
+
+}
+
+footer {
+
+  background-color: var( --accent1-color );
+
+  color: var(--primary-color);
+
+  font-weight: 600;
+
+}
+
+footer .container {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 10px 0;
+
+}
+
+.social {
+
+  display: flex;
+
+  column-gap: 10px;
 
 }
