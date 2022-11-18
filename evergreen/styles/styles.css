@@ -422,3 +422,90 @@ footer .container {
   column-gap: 10px;
 
 }
+
+/* Start of the packages subgroup page */
+
+.pckges-header {
+
+  margin: 50px 0;
+
+  text-align: center;
+
+}
+
+.pckges-content {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  column-gap: 50px;
+
+  margin-bottom: 150px;
+
+}
+
+.pckges-content:nth-child(even) [class^="pckges-image"] {
+
+  order: 1;
+
+}
+
+/* .pckges-content:not(:last-of-type) {
+
+  color: red;  
+
+} */
+
+.pckges-image-1 {
+
+  background: url("../images/luxury-picnic.jpg") no-repeat center center;
+
+  background-size: cover;
+
+}
+
+.pckges-image-2 {
+
+  background: url("../images/painting-picnic.jpg") no-repeat center center;
+
+  background-size: cover;
+
+}
+
+.pckges-image-3 {
+
+  background: url("../images/movie-picnic.jpg") no-repeat center center;
+
+  background-size: cover;
+
+}
+
+[class^="pckges-image"],
+.pckges-text {
+
+  width: 50%;
+
+}
+
+.pckges-text {
+
+  padding: 20px;
+
+  text-align: center;
+
+}
+
+.pckges-title {
+
+  margin-bottom: 20px;
+
+  /* text-align: center; */
+
+}
+
+.pckges-paragraph {
+
+  margin-bottom: 15px;
+
+}
