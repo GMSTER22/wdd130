@@ -44,7 +44,7 @@ body {
 
   font-size: 20px;
 
-  background-color: var( --accent4-color );
+  /* background-color: var( --accent4-color ); */
 
 }
 
@@ -500,12 +500,71 @@ footer .container {
 
   margin-bottom: 20px;
 
-  /* text-align: center; */
-
 }
 
 .pckges-paragraph {
 
   margin-bottom: 15px;
+
+}
+
+/* Start of the packages subgroup page */
+
+
+.grazingbox-header {
+
+  margin: 50px 0;
+
+  text-align: center;
+
+}
+
+.grazingbox-content {
+
+  display: flex;
+
+  max-width: max-content;
+
+  margin: 0 auto;
+
+}
+
+.grazingbox-content {
+
+  margin-bottom: 50px;
+
+}
+
+.grazingbox-content img {
+
+  max-width: 600px;
+
+}
+
+.grazingbox-text {
+
+  align-self: center;
+
+  max-width: 400px;
+
+  margin-left: -80px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  background-color: var(--paragraph-background-color);
+
+  color: var(--paragraph-color-on-color);
+
+  border-radius: 5px;
+
+}
+
+.grazingbox-text h2 {
+
+  margin-bottom: 10px;
+
+  color: var(--accent1-color);
 
 }
