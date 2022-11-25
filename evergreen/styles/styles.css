@@ -80,7 +80,11 @@ img {
 
 }
 
-header { background-color: var(--accent1-color); }
+header {
+  
+  background-color: var(--accent1-color);
+
+}
 
 header .container {
 
@@ -94,15 +98,21 @@ header .container {
 
   padding: 10px 0;
 
-  overflow: hidden;
-
 }
 
 .logo {
 
-  width: 70px;
+  width: 150px;
 
-  height: 70px;
+  height: 150px;
+
+}
+
+.logo-anchor {
+
+  align-self: flex-start;
+
+  z-index: 1;
 
 }
 
@@ -116,7 +126,7 @@ nav ul {
 
 nav a {
 
-  padding: 0 38px;
+  padding: 30px;
 
   color: var( --primary-color );
 
